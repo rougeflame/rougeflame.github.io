@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        test
+    </title>
+</head>
+<body>
+    <style>
+        h1{ 
+            color:blue;
+            font-family:verdana;
+            text-align:center;
+        }
+        body{
+            background-color:cornflowerblue;
+        }
+    </style>
+    <h1>BOOK A SHOW - TICKET BOOKING</h1>
+    <form>
+    <center>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" id="name" name="name" placeholder="Enter the name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Movie Name</td>
+                <td>
+                    <input type="text" id="movie" name="movie" placeholder="Movie Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Circle</td>
+                <td>
+                    <select id="circle" name="circle" required>
+                        <option value="Silver">Siver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>phone Number</td>
+                <td>
+                    <input type="text" id="number" name="number" pattern="^[7-9]{1}[0-9]{9}$" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Show Date and Time</td>
+                <td>
+                    <input type="text" id="date" name="date" pattern="^[0-9]{2}+/+[0-9]{2}+/+[0-9]{4} [0-9]{2}+:+:[0-9]{2}$" required>
+                </td>
+            </tr>
+            <tr>
+                <td>No of Adults</td>
+                <td>
+                    <input type="number" id="adults" name="adults" required>
+                </td>
+            </tr>
+            <tr>
+                <td>No of Children</td>
+                <td>
+                    <input type="number" id="children" name="children" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" id="submit" name="submit" onclick="myfunction()">Book My Show</button>
+                </td>
+                <td>
+                    <input type="reset" id="reset" name="clear"/>
+                </td>
+            </tr>
+        </table>
+    </center>
+    </form>
+    <script>
+        function myfunction(){
+            alert("Booking Succesfull");
+        }
+    </script>
+</body>
+
+</html>
